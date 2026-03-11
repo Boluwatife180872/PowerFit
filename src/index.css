@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+﻿/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -212,7 +212,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* Add top padding to account for fixed navigation */
   padding-top: 100px;
 }
 
@@ -253,7 +252,6 @@ body {
   max-width: 800px;
   padding: 0 20px;
   z-index: 1;
-  /* Ensure content doesn't overlap with navigation */
   margin-top: 0;
 }
 
@@ -944,127 +942,6 @@ section {
 }
 
 /* Contact Section */
-/* .contact {
-  background: #f8f9fa;
-}
-
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.contact-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.contact-details h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.contact-details p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.contact-form {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 15px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  background: transparent;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #667eea;
-}
-
-.form-group label {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  color: #999;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.form-group input:focus + label,
-.form-group input:valid + label,
-.form-group select:focus + label,
-.form-group select:valid + label,
-.form-group textarea:focus + label,
-.form-group textarea:valid + label {
-  top: -10px;
-  left: 10px;
-  font-size: 0.8rem;
-  color: #667eea;
-  background: white;
-  padding: 0 5px;
-}
-
-.form-submit-btn {
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.form-submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-} */
-
-/* Contact Section */
 .contact {
   background: #f8f9fa;
 }
@@ -1410,7 +1287,7 @@ section {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
 }
 
 .video-container iframe {
@@ -1449,7 +1326,6 @@ section {
     margin: 1rem 0;
   }
 
-  /* Increase top padding on mobile for better spacing */
   .hero {
     padding-top: 320px;
   }
@@ -1467,10 +1343,39 @@ section {
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card.popular {
+    transform: none;
+  }
+
+  .pricing-card.popular:hover {
+    transform: translateY(-10px);
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
 }
 
 @media (max-width: 480px) {
-  /* Additional top padding for very small screens */
   .hero {
     padding-top: 420px;
   }
