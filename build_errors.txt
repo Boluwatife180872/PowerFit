@@ -1,0 +1,4 @@
+src/legacyInteractions.ts(177,25): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+src/legacyInteractions.ts(192,11): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+src/legacyInteractions.ts(302,25): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+src/legacyInteractions.ts(348,31): error TS2554: Expected 2 arguments, but got 1.

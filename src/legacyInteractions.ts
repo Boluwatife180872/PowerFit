@@ -1,4 +1,4 @@
-﻿export function initializeLegacyInteractions(): () => void {
+export function initializeLegacyInteractions(): () => void {
   const cleanups: Array<() => void> = [];
   const timeouts: number[] = [];
 
@@ -171,7 +171,7 @@
   // Contact Form
   const contactForm = document.getElementById('contactForm') as HTMLFormElement | null;
   if (contactForm) {
-    addListener(contactForm, 'submit', function (event) {
+    addListener(contactForm, 'submit', function (this: HTMLFormElement, event) {
       event.preventDefault();
 
       const submitBtn = this.querySelector('.form-submit-btn') as HTMLButtonElement | null;
@@ -297,7 +297,7 @@
   // Smooth Scrolling
   const navAnchors = document.querySelectorAll('a[href^="#"]');
   navAnchors.forEach((link) => {
-    addListener(link, 'click', function (event) {
+    addListener(link, 'click', function (this: HTMLAnchorElement, event) {
       event.preventDefault();
       const targetId = (this as HTMLAnchorElement).getAttribute('href');
       if (!targetId || targetId === '#') return;
@@ -339,13 +339,13 @@
   // Performance optimization (light debounce)
   let scrollTimeout: number | undefined;
   const originalScrollHandler = window.onscroll;
-  window.onscroll = () => {
+  window.onscroll = (ev: Event) => {
     if (scrollTimeout) {
       window.clearTimeout(scrollTimeout);
     }
     scrollTimeout = window.setTimeout(() => {
       if (originalScrollHandler) {
-        originalScrollHandler.call(window);
+        originalScrollHandler.call(window, ev);
       }
     }, 10);
   };
