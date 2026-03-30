@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const About: React.FC = () => {
   return (
@@ -11,6 +11,34 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className="about-content">
+          <div className="about-top">
+            <div className="about-image" data-aos="fade-right">
+              <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=800" alt="Gym Interior" />
+              <div className="experience-badge">
+                <span className="years">15+</span>
+                <span className="text">Years of Excellence</span>
+              </div>
+            </div>
+            <div className="about-text" data-aos="fade-left">
+              <h3>More Than Just A Gym</h3>
+              <p>
+                At PowerFit, we believe that fitness is a lifestyle, not a chore. 
+                Our journey started with a simple belief: everyone deserves access 
+                to world-class facilities and expert guidance to reach their potential.
+              </p>
+              <p>
+                We've spent the last 15 years building a community where members 
+                support one another, where trainers are mentors, and where every 
+                workout brings you closer to the best version of yourself.
+              </p>
+              <ul className="about-list">
+                <li><i className="fas fa-check-circle"></i> Certified Professional Trainers</li>
+                <li><i className="fas fa-check-circle"></i> 24/7 Access to Facilities</li>
+                <li><i className="fas fa-check-circle"></i> Personalized Training Programs</li>
+                <li><i className="fas fa-check-circle"></i> Modern Equipment & Amenities</li>
+              </ul>
+            </div>
+          </div>
           <div className="about-features">
             <div className="feature-card" data-aos="fade-up">
               <div className="feature-icon">

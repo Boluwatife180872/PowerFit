@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const Trainers: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Trainers: React.FC = () => {
         </div>
         <div className="trainers-grid">
           <div className="trainer-card">
-            <div className="trainer-image">
+            <div className="trainer-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1548690312-e3b507d17a47?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="trainer-overlay">
                 <div className="trainer-social">
                   <a href="#"><i className="fab fa-instagram"></i></a>
@@ -32,7 +32,7 @@ const Trainers: React.FC = () => {
             </div>
           </div>
           <div className="trainer-card">
-            <div className="trainer-image">
+            <div className="trainer-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1567013127542-490d757e51fe?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="trainer-overlay">
                 <div className="trainer-social">
                   <a href="#"><i className="fab fa-instagram"></i></a>
@@ -52,7 +52,7 @@ const Trainers: React.FC = () => {
             </div>
           </div>
           <div className="trainer-card">
-            <div className="trainer-image">
+            <div className="trainer-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="trainer-overlay">
                 <div className="trainer-social">
                   <a href="#"><i className="fab fa-instagram"></i></a>

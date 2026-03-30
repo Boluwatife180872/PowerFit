@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const Programs: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const Programs: React.FC = () => {
         </div>
         <div className="programs-grid">
           <div className="program-card" data-category="strength">
-            <div className="program-image">
+            <div className="program-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581009146145-b5ef03a7403f?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="program-overlay">
                 <button className="program-btn">Learn More</button>
               </div>
@@ -41,7 +41,7 @@ const Programs: React.FC = () => {
             </div>
           </div>
           <div className="program-card" data-category="cardio">
-            <div className="program-image">
+            <div className="program-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541534741688-6078c65b5a33?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="program-overlay">
                 <button className="program-btn">Learn More</button>
               </div>
@@ -59,7 +59,7 @@ const Programs: React.FC = () => {
             </div>
           </div>
           <div className="program-card" data-category="flexibility">
-            <div className="program-image">
+            <div className="program-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="program-overlay">
                 <button className="program-btn">Learn More</button>
               </div>
@@ -77,7 +77,7 @@ const Programs: React.FC = () => {
             </div>
           </div>
           <div className="program-card" data-category="group">
-            <div className="program-image">
+            <div className="program-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1571902251103-671c6d6a6aa8?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="program-overlay">
                 <button className="program-btn">Learn More</button>
               </div>
@@ -95,7 +95,7 @@ const Programs: React.FC = () => {
             </div>
           </div>
           <div className="program-card" data-category="strength">
-            <div className="program-image">
+            <div className="program-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="program-overlay">
                 <button className="program-btn">Learn More</button>
               </div>
@@ -113,7 +113,7 @@ const Programs: React.FC = () => {
             </div>
           </div>
           <div className="program-card" data-category="cardio">
-            <div className="program-image">
+            <div className="program-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1530549387074-6aa1995fdfd2?auto=format&fit=crop&q=80&w=800')" }}>
               <div className="program-overlay">
                 <button className="program-btn">Learn More</button>
               </div>

@@ -439,7 +439,7 @@ function showNotification(message: string, type: 'info' | 'success' = 'info') {
             <span>${message}</span>
         </div>
     `;
-
+  
   notification.style.cssText = `
         position: fixed;
         top: 100px;
